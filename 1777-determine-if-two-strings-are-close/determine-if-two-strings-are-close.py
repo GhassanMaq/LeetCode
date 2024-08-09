@@ -2,6 +2,8 @@ class Solution(object):
     def closeStrings(self, word1, word2):
         w1=Counter(word1)
         w2=Counter(word2)
+        if(len(w1)!=len(w2)):
+            return False
         print(w1)
         print(w2)
         n1=Counter([v for v in w1.values()])
